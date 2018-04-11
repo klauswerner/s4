@@ -35,8 +35,8 @@ console.log("Anzahl der Strings: ", zeichenliste.length);
 
 //Zuweisungssyntax beachten!!
 let benutzer = {
-    vorname: "John",
-    nachname: "Doe",
+    vorname: "John", 
+    nachname: "Doe", 
     alter: 29
 };
 console.log("Benutzer Alter: ", benutzer.alter);
@@ -55,4 +55,38 @@ console.log(test.test);
 
 
 //Benutzer Eingabe
-prompt("Wie alt bist du?");
+
+//prompt("Wie alt bist du?"); speichert aber noch keine Eingabe, daher Variable anlegen!
+
+// strg + # für markierte Auswahl auskommentieren
+
+// let alter2 = prompt("Wie alt bist du?");
+// console.log("Du bist ",alter2," Jahre alt.");
+// console.log("Über 18:", alter2 >18);
+
+// if(alter2 > 18){
+//     console.log("Freier Eintritt ;) ");    
+// }else{
+//     console.log("Du kummscht hier net rein!!");
+// }
+
+// FOR - Schleife
+
+for (let i=0;i<10;i++){             //i=1;i<=10
+console.log("Wert von i: ", i);
+}
+
+function showAge(birthyear) {
+    let calcage = 2018 - birthyear;
+    console.log("Du bist", calcage,"Jahre alt");
+};
+
+showAge(1988);
+showAge(1970);
+
+function fcalcage (birthyear) {
+    return 2018 - birthyear;
+}
+
+console.log("Du bist ", fcalcage(1988), "Jahre");
+console.log("und du ", fcalcage(1970), ".");
